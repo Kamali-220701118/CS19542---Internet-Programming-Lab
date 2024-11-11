@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Resize Event</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(window).on("resize", function() {
+            console.log("Window resized to: " + $(window).width() + "x" + $(window).height());
+        });
+    </script>
+</head>
+<body>
+    <h1>Resize the window</h1>
+</body>
+</html>

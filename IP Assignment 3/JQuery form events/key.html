@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keydown Event Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("input").on("keydown", function(event) {
+                console.log("Key pressed: " + event.key);
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Press keys here">
+</body>
+</html>

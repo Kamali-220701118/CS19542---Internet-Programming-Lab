@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Scroll Event</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(window).on("scroll", function() {
+            console.log("Scrolled to position: " + $(window).scrollTop());
+        });
+    </script>
+</head>
+<body style="height: 2000px;">
+    <h1>Scroll down</h1>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Event Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("input, textarea").on("input", function() {
+                console.log("Current value: " + $(this).val());
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Type here">
+    <textarea placeholder="Type more here"></textarea>
+</body>
+</html>

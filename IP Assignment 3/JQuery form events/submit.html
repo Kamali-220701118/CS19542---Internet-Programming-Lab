@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Event Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("form").on("submit", function(event) {
+                event.preventDefault(); // Prevent actual submission
+                alert("Form submitted!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" name="name" placeholder="Enter name">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

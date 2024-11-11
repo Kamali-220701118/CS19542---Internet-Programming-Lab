@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Focus Event Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("input").on("focus", function() {
+                $(this).css("background-color", "#e0e0e0");
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Focus on me">
+</body>
+</html>

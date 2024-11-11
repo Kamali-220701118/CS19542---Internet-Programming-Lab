@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Event Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("input, select, textarea").on("change", function() {
+                alert("Value changed to: " + $(this).val());
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Type something">
+    <select>
+        <option value="Kamali">Kamali</option>
+        <option value="Keerthi">Keerthi</option>
+    </select>
+    <textarea placeholder="Write something"></textarea>
+</body>
+</html>
