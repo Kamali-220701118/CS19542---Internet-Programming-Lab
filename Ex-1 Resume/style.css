@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+}
+.name{
+    font-variant-caps:all-petite-caps;
+    color:orange;
+}
+.role{
+    opacity:0.6;
+}
+.hone,.htwo{
+    text-align: center;
+    color:orange;
+}
+.htre,.hfour,.hfive{
+    color:orange;
+}
+.summary{
+    justify-content:center;
+}
+#photo{
+    height:100px;
+    width:90px;
+    margin-top:0;
+    margin-bottom:200px;
+}
+.intern{
+    font-size:120%;
+    font-variant-caps:all-petite-caps;
+    color:orange;
+    float:left;
+}
+.date{
+    color:orange;
+    float:right;
+}
+.container{
+    width:22cm;
+    height:36cm;
+    padding:1cm;
+    background:rgb(237, 234, 234);
+}
+
+/*.hfive{
+    color:orange;
+    display:flex;
+    justify-content:flex-end;
+    bottom:flex;
+}*/
+table,th,td{
+    border:1px solid;
+    width:90%;
+    border-collapse:collapse;
+    margin:10px;
+    padding:5px;
+    table-layout: fixed;
+}
+td{
+    text-align:center;
+}
+tr:hover{
+    background-color: rgb(209, 205, 205);
+}
+th,td{
+    width:15%;
+    height:35%;
+}
+.center{
+    margin-left:auto;
+    margin-right:auto;
+}
+.certificate{
+    text-align:end;
+}
+.hsix{
+    position:relative;
+    bottom:345px;
+    right:200px;
+    color:orange;
+}
+.certi{
+    list-style-position:inside;
+    position:relative;
+    bottom:360px;
+    right:60px;
+    display:flex;
+    flex-direction:column;
+}
+.projects{
+    text-align:end;
+}
+.hsev{
+    position:relative;
+    bottom:350px;
+    right:230px;
+    color:orange;
+}
+.proj{
+    list-style-position:inside;
+    position:relative;
+    bottom:370px;
+    right:100px;
+    display:flex;
+    flex-direction:column;
+}
+.vl{
+    border-left:1px solid rgb(235, 232, 232);
+    height:100px;
+    margin-left:50%;
+}
