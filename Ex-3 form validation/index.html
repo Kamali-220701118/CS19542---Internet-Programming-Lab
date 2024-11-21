@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+    <h1 class="head">FORM VALIDATION</h1></header>
+    <div class="container">
+    <div class="form">
+    <form name="myForm" method="post" onsubmit="return validateForm()" action="#">
+        <label>Student name: </label>
+        <input type="name" name="sname" placeholder="Enter your name"><br><br>
+        <label>Roll no: </label>
+        <input type="text" name="rno" placeholder="Enter your roll no"><br><br>
+        <label>Gender: </label><br>
+        <label for="male">
+            <input type="radio" id="male" name="gender" value="male">Male
+        </label><br>
+        <label for="female">
+            <input type="radio" id="female" name="gender" value="female">Female
+        </label><br>
+        <label for="other">
+            <input type="radio" id="other" name="gender" value="other">Prefer not to say
+        </label><br><br>
+        <label for="year">Year: </label>
+        <select id="year" style="width:100px" name="year">
+            <option value="">Select Year</option>
+            <option>1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+        </select><br><br>
+        <label for="dept">Department: </label>
+        <select id="dept" name="dept">
+            <option value="">Select Department</option>
+            <option>Computer Science and Engineering</option>
+            <option>Mechanical Engineering</option>
+            <option>Electrical and Electronics Engineering</option>
+            <option>Electronics and Communication Engineering</option>
+            <option>Information Technology</option>
+            <option>Computer Science and Business Design</option>
+            <option>Artificial Intelligence and Machine Learning</option>
+            <option>Biotechnology</option>
+            <option>Food Technology</option>
+        </select><br><br>
+        <label>Section: </label>
+        <input type="text" name="section" placeholder="Enter section"><br><br>
+        <label>Phone no: </label>
+        <input type="text" name="pno" placeholder="Enter phone no"><br><br>
+        <label>Email ID: </label>
+        <input type="email" name="gmail" placeholder="Enter your email id"><br><br>
+        <label>Country: </label>
+        <input type="text" name="country" placeholder="Enter country"><br><br>
+        <div class="select">
+        <label for="state">State: </label>
+        <select name="state" id="state" onchange="citiess()">
+            <option value="">Select state</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharastra">Maharastra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+        </select></div><br><br>
+        <div class="select">
+            <label for="city">City: </label>
+            <select name="city" id="city">
+                <option value="" selected="selected">Select city</option>
+            </select></div><br><br>
+        <label>Pincode: </label>
+        <input type="text" name="zip" placeholder="Enter pincode"><br><br>
+        <label>Address: </label>
+        <textarea style="height:100px; width:200px;" placeholder="Enter address" name="add"></textarea><br><br>
+        <button type="submit" id="sub">Submit</button>
+        <button type="reset" id="res">Reset</button>
+    </form></div></div>
+    <script src="script.js"></script>
+</body>
+</html>

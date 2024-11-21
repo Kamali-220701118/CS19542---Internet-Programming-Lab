@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        .cont{
+            height:200px;
+            width:400px;
+            border:1px solid black;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:50px;
+            padding:10px;
+            background:linear-gradient(to top,rgb(101, 101, 205),rgb(196, 85, 196),rgb(224, 120, 137));
+        }
+        input{
+            box-sizing:border-box;
+            border-radius:5px;
+            padding:10px;
+            text-align:center;
+        }
+        input:hover{
+            background-color:rgb(157, 197, 232);
+        }
+        button:hover{
+            background:linear-gradient(red,pink);
+        }
+        label{
+            font-size:large;
+            font-weight:bold;
+        }
+        button{
+            font-weight:bold;
+            background: pink;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="cont">
+    <form action="/index.html">
+        <label for="user">Username: </label>
+        <input type="text" id="user" placeholder="Enter username"><br><br>
+        <label for="pwd">Password: </label>
+        <input type="password" id="pwd" placeholder="Enter your password" onfocus="validchar"><br><br>
+        <label for="cpwd">Confirm Password: </label>
+        <input type="password" id="cpwd" placeholder="Enter your password again" onblur="valid(),validchar()"><br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form></div>
+</body>
+</html>
